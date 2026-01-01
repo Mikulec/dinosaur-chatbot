@@ -1,0 +1,22 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build-llm": "node packages/core-llm/build.js",
+    "start-llm": "npm run build-llm && node ./packages/core-llm/dist/index.js",
+    "models-llama": "npx --no node-llama-cpp chat"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-llama-cpp": "^3.14.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "esbuild": "^0.27.2"
+  }
+}
